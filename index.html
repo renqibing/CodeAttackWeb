@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <br>
+    <div class="logo" style="text-align: center;">
+        <a href="index.html">
+          <img src="./assets/images/logo.webp" width="10%">
+        </a>
+    </div>
+    <title>MP5 | A Multi-modal Open-ended Embodied System in Minecraft via Active Perception</title>
+
+    <script>
+        var task_map = {
+            "simple-object-manipulation": "simple_object_manipulation",
+            "visual-goal-reaching": "visual_goal_reaching",
+            "novel-concept-grounding": "novel_concept_grounding",
+            "one-shot-video-imitation": "one_shot_video_imitation",
+            "visual-constraint-satisfaction": "visual_constraint_satisfaction",
+            "visual-reasoning": "visual_reasoning"
+        };
+
+        function updateDemoVideo(category) {
+            // var demo = document.getElementById("single-menu-demos").value;
+            var task = document.getElementById(category + "-menu-tasks").value;
+            var inst = document.getElementById(category + "-menu-instances").value;
+
+            console.log(task_map[category], task, inst)
+
+            var video = document.getElementById(category + "-single-task-video");
+            video.src = "assets/videos/demos/" +
+                task_map[category] +
+                "/" +
+                task +
+                "/" +
+                inst +
+                ".mp4";
+            video.playbackRate = 2.0;
+            video.play();
+        }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="./static/css/academicons.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-1 publication-title" style="font-size: 2.5rem;">Towards Tracing Trustworthiness Dynamics: <br>Revisiting Pre-training Period of Large Language Models</h1>
+                    <h3 class="title is-4 conference-authors"><a target="_blank" href="https://cvpr.thecvf.com/">ACL 2024</a>
+                    </h3>
+                    <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a target="_blank" href="https://github.com/ChnQ">Chen&#160;Qian</a><sup>1 2*</sup>,
+                <a target="_blank" href="https://github.com/tmylla">Jie&#160;Zhang</a><sup>1 3*</sup>,
+                <a target="_blank"
+                   href="https://scholar.google.com/citations?user=JbYPAqoAAAAJ&hl=en">Wei&#160;Yao</a><sup>1 2*</sup>,
+                <a target="_blank" href="https://scholar.google.com/citations?user=i0paeq4AAAAJ&hl=en">Dongrui&#160;Liu</a><sup>1 5</sup>,
+                <br>
+                <a target="_blank" href="https://scholar.google.com/citations?user=ngPR1dIAAAAJ&hl=en">Zhenfei&#160;Yin</a><sup>3</sup>,
+                <a target="_blank"
+                   href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=en">Yu&#160;Qiao</a><sup>2</sup>,
+                <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=vVhmzbAAAAAJ">Yong&#160;Liu</a><sup>1&#9993</sup>,
+                <a target="_blank" href="https://amandajshao.github.io/">Jing&#160;Shao</a><sup>1&#9993</sup>
+            </span>
+                    </div>
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>1</sup>Shanghai Artificial Intelligence Laboratory; </span>
+                        <span class="author-block"><sup>2</sup>Renmin University of China; </span>
+                        <span class="author-block"><sup>3</sup>Chinese Academy of Sciences; </span>
+                        <span class="author-block"><sup>4</sup>Shanghai Jiao Tong University; </span>
+                        <span class="author-block"><sup>5</sup>The University of Sydney; </span>
+                    </div>
+
+
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"><sup>*&#160;</sup>Equal Contribution&#160;&#160;</span>
+                        <span class="author-block"><sup>&#9993&#160;</sup>Corresponding author&#160;&#160;</span>
+                        <!-- <span class="author-block"><sup>&dagger;&#160;</sup>Project Leader&#160;&#160;</span> -->
+                    </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                            <!-- TODO PDF Link. -->
+                            <span class="link-block">
+                <a target="_blank" href="https://arxiv.org/abs/2402.19465"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+                            <span class="link-block">
+                <a target="_blank" href="assets/TracingLLMs.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>PDF</span>
+                </a>
+              </span>
+                            <!-- Code Link. -->
+                            <span class="link-block">
+                <a target="_blank" href="https://github.com/ChnQ/TracingLLM"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+                <a target="_blank" href="https://github.com/ChnQ/TracingLLM/tree/master/src/datasets"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="columns is-centered has-text-centered">
+    <div class="column">
+        <img src="assets/images/overview.png" width="75%">
+    </div>
+</div>
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3">Introduction</h2>
+                <div class="content has-text-justified">
+                    <p style="font-size: 125%">
+                        We are excited to present "Towards Tracing Trustworthiness Dynamics: Revisiting Pre-training Period of Large Language Models," a pioneering study on exploring trustworthiness in LLMs during pre-training. 
+                        We explores five key dimensions of trustworthiness: reliability, privacy, toxicity, fairness, and robustness. 
+                        By employing linear probing and extracting steering vectors from LLMs' pre-training checkpoints, the study aims to uncover the potential of pre-training in enhancing LLMs' trustworthiness. Furthermore, we investigates the dynamics of trustworthiness during pre-training through mutual information estimation, observing a two-phase phenomenon: fitting and compression. 
+                        Our findings unveil new insights and encourage further developments in improving the trustworthiness of LLMs from an early stage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Model-->
+<!--Model-->
+<section class="section">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="row is-full-width">
+                    <h2 class="title is-3"><span class="dvima">Probing LLM Pre-training Dynamics in Trustworthiness</span></h2>
+                    <img src="assets/images/probing.png" class="interpolation-image"
+                         alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                    <br>
+                    <span style="font-size: 110%">
+                        <span style="font-weight: bold">The linear probe accuracy on five trustworthiness dimensions for the first 80 pre-training checkpoints.</span> 
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>Models during the <span style="color: orange; font-weight: bold;">early stages of pre-training</span> can already encode trustworthiness well.</li>
+                            <li><span style="color: orange; font-weight: bold;">Middle and high layers</span> representations exhibit relatively high linearly separable patterns about trustworthiness than low layers.</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="section">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="row is-full-width">
+                    <h2 class="title is-3"><span class="dvima">Controlling Trustworthiness with the Help of Pre-training Checkpoints                    </span></h2>
+                    <div class="columns is-vcentered">
+                        <div class="column has-text-centered">
+                            <img src="assets/images/steering_vector.png" class="interpolation-image" width="85%"
+                                 alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                            <p style="font-size: 90%; font-weight: bold;">Constructing steering vectors from the pre-training checkpoints <br>and intervening in the SFT model</p>
+                        </div>
+                        <div class="column has-text-centered">
+                            <img src="assets/images/enhancing_trustworthiness.png" class="interpolation-image" width="70%"
+                                 alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                            <p style="font-size: 90%; font-weight: bold;">Performance of various models across four general capabilities <br>and five trustworthiness capabilities</p>
+                        </div>
+                    </div>
+                    <br>
+                    <span style="font-size: 110%">
+                        <span style="font-weight: bold">When using the steering vector from the pre-training checkpoints to intervene in the SFT model:                        </span> 
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>There is a significant <span style="color: orange; font-weight: bold;">improvement</span> in three dimensions of trustworthiness.</li>
+                            <li>The intervention <span style="color: orange; font-weight: bold;">has a minor impact on the general capabilities</span> of the model.</li>
+                            <li>Enhance the trustworthiness performance of the SFT model <span style="color: orange; font-weight: bold;">more effectively compared to the steering vectors from the SFT model itself</span>.</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="row is-full-width">
+                    <h2 class="title is-3"><span class="dvima">Probing LLMs using Mutual Information      </span></h2>
+                    <img src="assets/images/mi.png" class="interpolation-image" width="60%"
+                         alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                    <br>
+                    <span style="font-size: 110%">
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>We take an alternative view by probing LLMs with mutual information during pre-training.</li>
+                            <li>During the pre-training period of LLMs, there exist two distinct phases regarding trustworthiness: <span style="color: orange; font-weight: bold;">fitting and compression</span>, which is in line with previous research on traditional DNNs.</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Conclusion-->
+<section class="section">
+    <div class="container is-max-widescreen">
+        <div class="rows">
+            <div class="rows is-centered ">
+                <div class="row is-full-width">
+                    <h2 class="title is-3"><span
+                            class="dvima">Conclusion</span></h2>
+
+                    <p style="font-size: 125%">
+                        In this work, we take an initial and illuminating step towards elucidating the conceptual understanding of trustworthiness during pre-training.
+Firstly, by linear probing LLMs across reliability, privacy, toxicity, fairness, and robustness, we investigate the ability of LLMs representations to discern opposing concepts within each trustworthiness dimension during the whole pre-training period. 
+Furthermore, motivated by the probing results, we conduct extensive experiments to reveal the potential of utilizing representations from LLMs during its previous pre-training period to enhance LLMs' own trustworthiness. 
+Finally, we use mutual information to probe LLMs during pre-training and reveal some similarities in the learning mechanism between LLMs and traditional DNNs.
+<br><br>
+Taken collectively, the empirical study presented in this work can not only justify the potential to improve the trustworthiness of LLMs using their own pre-training checkpoints but may also lead to a better understanding of the dynamics of LLM representations, especially the trustworthiness-related concepts.
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+    <div class="container is-max-widescreen content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@inproceedings{jiang2023vima,
+  title     = {VIMA: General Robot Manipulation with Multimodal Prompts},
+  author    = {Yunfan Jiang and Agrim Gupta and Zichen Zhang and Guanzhi Wang and Yongqiang Dou and Yanjun Chen and Li Fei-Fei and Anima Anandkumar and Yuke Zhu and Linxi Fan},
+  booktitle = {Fortieth International Conference on Machine Learning},
+  year      = {2023}
+}</code></pre>
+    </div>
+</section> -->
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-widescreen content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{qian2024towards,
+            title={Towards Tracing Trustworthiness Dynamics: Revisiting Pre-training Period of Large Language Models},
+            author={Qian, Chen and Zhang, Jie and Yao, Wei and Liu, Dongrui and Yin, Zhenfei and Qiao, Yu and Liu, Yong and Shao, Jing},
+            journal={arXiv preprint arXiv:2402.19465},
+            year={2024}
+}</code></pre>
+    </div>
+</section>
+
+
+</body>
+</html>
+
