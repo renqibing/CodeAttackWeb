@@ -9,7 +9,7 @@
           <img src="./assets/images/logo.webp" width="10%">
         </a>
     </div>
-    <title>Towards Tracing Trustworthiness Dynamics: <br>Revisiting Pre-training Period of Large Language Models</title>
+    <title>CodeAttack: Revealing Safety Generalization Challenges of Large Language Models via Code Completion</title>
 
     <script>
         var task_map = {
@@ -72,26 +72,21 @@
                     </h3>
                     <div class="is-size-5 publication-authors">
             <span class="author-block">
-                <a target="_blank" href="https://github.com/ChnQ">Chen&#160;Qian</a><sup>1 2*</sup>,
-                <a target="_blank" href="https://github.com/tmylla">Jie&#160;Zhang</a><sup>1 3*</sup>,
-                <a target="_blank"
-                   href="https://scholar.google.com/citations?user=JbYPAqoAAAAJ&hl=en">Wei&#160;Yao</a><sup>1 2*</sup>,
-                <a target="_blank" href="https://scholar.google.com/citations?user=i0paeq4AAAAJ&hl=en">Dongrui&#160;Liu</a><sup>1 4</sup>,
-                <br>
-                <a target="_blank" href="https://scholar.google.com/citations?user=ngPR1dIAAAAJ&hl=en">Zhenfei&#160;Yin</a><sup>1 5</sup>,
-                <a target="_blank"
-                   href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=en">Yu&#160;Qiao</a><sup>1</sup>,
-                <a target="_blank" href="https://scholar.google.com/citations?hl=en&user=vVhmzbAAAAAJ">Yong&#160;Liu</a><sup>2&#9993</sup>,
-                <a target="_blank" href="https://amandajshao.github.io/">Jing&#160;Shao</a><sup>1&#9993</sup>
+                <a target="_blank" href="https://scholar.google.com/citations?user=UZKS9MQAAAAJ&hl=en">Qibing&#160;Ren</a><sup>1*</sup>,
+                <a target="_blank" href="https://gao-xiao-bai.github.io">Chang&#160;Gao</a><sup>2*</sup>,
+                <a target="_blank" href="https://amandajshao.github.io/">Jing&#160;Shao</a><sup>3&#9993</sup>
+                <a target="_blank" href="https://thinklab.sjtu.edu.cn">Junchi&#160;Yan</a><sup>1</sup>
+                <a target="_blank" href="https://tanxincs.github.io">Xin&#160;Tan</a><sup>4</sup>
+                <a target="_blank" href="https://scholar.google.com/citations?user=ewA4NAcAAAAJ&hl=en">Wai&#160;Lam</a><sup>2</sup>
+                <a target="_blank" href="https://scholar.google.com/citations?user=yd58y_0AAAAJ&hl=en">Lizhuang&#160;Ma</a><sup>1&#9993</sup>
             </span>
                     </div>
 
                     <div class="is-size-5 publication-authors">
-                        <span class="author-block"><sup>1</sup>Shanghai Artificial Intelligence Laboratory; </span>
-                        <span class="author-block"><sup>2</sup>Renmin University of China; </span>
-                        <span class="author-block"><sup>3</sup>Chinese Academy of Sciences; </span>
-                        <span class="author-block"><sup>4</sup>Shanghai Jiao Tong University; </span>
-                        <span class="author-block"><sup>5</sup>The University of Sydney; </span>
+                        <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University; </span>
+                        <span class="author-block"><sup>2</sup>The Chinese University of Hong Kong; </span>
+                        <span class="author-block"><sup>3</sup>Shanghai Artificial Intelligence Laboratory; </span>
+                        <span class="author-block"><sup>4</sup>East China Normal University; </span>
                     </div>
 
 
@@ -105,7 +100,7 @@
                         <div class="publication-links">
                             <!-- TODO PDF Link. -->
                             <span class="link-block">
-                <a target="_blank" href="https://arxiv.org/abs/2402.19465"
+                <a target="_blank" href="https://arxiv.org/abs/2403.07865"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -115,7 +110,7 @@
               </span>
 
                             <span class="link-block">
-                <a target="_blank" href="assets/TracingLLMs.pdf"
+                <a target="_blank" href="assets/2403.07865v4.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -125,14 +120,14 @@
               </span>
                             <!-- Code Link. -->
                             <span class="link-block">
-                <a target="_blank" href="https://github.com/ChnQ/TracingLLM"
+                <a target="_blank" href="https://github.com/renqibing/CodeAttack"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                 </a>
-                <a target="_blank" href="https://github.com/ChnQ/TracingLLM/tree/master/src/datasets"
+                <a target="_blank" href="https://github.com/renqibing/CodeAttack/tree/main/data"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-database"></i>
@@ -142,7 +137,7 @@
               </span>
 
               <span class="link-block">
-                <a target="_blank" href="https://mp.weixin.qq.com/s/JD0PSOahuYloTgOHqGUtcA"
+                <a target="_blank" href="https://mp.weixin.qq.com/s/w5dNlKw2mcBjafmR5hg8iQ"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-book"></i>
@@ -174,10 +169,10 @@
                 <h2 class="title is-3">Introduction</h2>
                 <div class="content has-text-justified">
                     <p style="font-size: 125%">
-                        We are excited to present "Towards Tracing Trustworthiness Dynamics: Revisiting Pre-training Period of Large Language Models," a pioneering study on exploring trustworthiness in LLMs during pre-training. 
-                        We explores five key dimensions of trustworthiness: reliability, privacy, toxicity, fairness, and robustness. 
-                        By employing linear probing and extracting steering vectors from LLMs' pre-training checkpoints, the study aims to uncover the potential of pre-training in enhancing LLMs' trustworthiness. Furthermore, we investigates the dynamics of trustworthiness during pre-training through mutual information estimation, observing a two-phase phenomenon: fitting and compression. 
-                        Our findings unveil new insights and encourage further developments in improving the trustworthiness of LLMs from an early stage.
+                        In this work, we reveal an universal safety generalization issue of current large language models (LLMs) in the domain of code. 
+                        Our proposed CodeAttack achieves more than 80% attack success rate on state-of-the-art LLMs including GPT-4, Claude-2, and Llama-2 series.
+                        We give our hypotheses about the success of CodeAttack: the misaligned bias acquired by LLMs during code training, prioritizing code completion over avoiding the potential safety risk.
+                        We hope that sharing our discoveries will inspire further research into designing more robust safety alignment algorithms, towards the safer integration of LLMs into the real world.
                     </p>
                 </div>
             </div>
@@ -193,50 +188,33 @@
         <div class="rows">
             <div class="rows is-centered ">
                 <div class="row is-full-width">
-                    <h2 class="title is-3"><span class="dvima">Probing LLM Pre-training Dynamics in Trustworthiness</span></h2>
-                    <img src="assets/images/probing.png" class="interpolation-image"
-                         alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                    <br>
-                    <span style="font-size: 110%">
-                        <span style="font-weight: bold">The linear probe accuracy on five trustworthiness dimensions for the first 80 pre-training checkpoints.</span> 
-                        <ul style="list-style-type: disc; padding-left: 20px;">
-                            <li>Models during the <span style="color: orange; font-weight: bold;">early stages of pre-training</span> can already encode trustworthiness well.</li>
-                            <li><span style="color: orange; font-weight: bold;">Middle and high layers</span> representations exhibit relatively high linearly separable patterns about trustworthiness than low layers.</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="section">
-    <div class="container is-max-widescreen">
-        <div class="rows">
-            <div class="rows is-centered ">
-                <div class="row is-full-width">
-                    <h2 class="title is-3"><span class="dvima">Controlling Trustworthiness with the Help of Pre-training Checkpoints                    </span></h2>
+                    <h2 class="title is-3"><span class="dvima">CodeAttack can breach the safety guardrails of current SOTA LLMs</span></h2>
                     <div class="columns is-vcentered">
                         <div class="column has-text-centered">
-                            <img src="assets/images/steering_vector.png" class="interpolation-image" width="85%"
+                            <img src="assets/images/main_res.png" class="interpolation-image" width="85%"
                                  alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                            <p style="font-size: 90%; font-weight: bold;">Constructing steering vectors from the pre-training checkpoints <br>and intervening in the SFT model</p>
+                            <!-- <p style="font-size: 90%; font-weight: bold;">Constructing steering vectors from the pre-training checkpoints <br>and intervening in the SFT model</p> -->
                         </div>
                         <div class="column has-text-centered">
-                            <img src="assets/images/enhancing_trustworthiness.png" class="interpolation-image" width="70%"
+                            <img src="assets/images/datastruc.png" class="interpolation-image" width="70%"
                                  alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                            <p style="font-size: 90%; font-weight: bold;">Performance of various models across four general capabilities <br>and five trustworthiness capabilities</p>
+                            <!-- <p style="font-size: 90%; font-weight: bold;">Performance of various models across four general capabilities <br>and five trustworthiness capabilities</p> -->
                         </div>
                     </div>
-                    <br>
+
+                    <!-- <img src="assets/images/probing.png" class="interpolation-image"
+                         alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                    <br> -->
                     <span style="font-size: 110%">
-                        <span style="font-weight: bold">When using the steering vector from the pre-training checkpoints to intervene in the SFT model:                        </span> 
+                        <span style="font-weight: bold">Larger distribution gap between CodeAttack and natural language leads to weaker safety generalization.</span>
                         <ul style="list-style-type: disc; padding-left: 20px;">
-                            <li>There is a significant <span style="color: orange; font-weight: bold;">improvement</span> in three dimensions of trustworthiness.</li>
-                            <li>The intervention <span style="color: orange; font-weight: bold;">has a minor impact on the general capabilities</span> of the model.</li>
-                            <li>Enhance the trustworthiness performance of the SFT model <span style="color: orange; font-weight: bold;">more effectively compared to the steering vectors from the SFT model itself</span>.</li>
+                            <li>We find that LLMs are more likely to exhibit unsafe behavior when <span style="color: orange; font-weight: bold;">the encoded input is less similar to natural language</span>, i.e., further from the safety training data distribution.</li>
+                        </ul>
+                    </span>
+                    <span style="font-size: 110%">
+                        <span style="font-weight: bold">A more powerful model does not necessar- ily lead to better safety behavior.</span>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>We find that bigger models like Claude-2 and GPT-4 are still vulnerable to CodeAttack. Furthermore, CodeLlama-70b-instruct, fine-tuned on Llama-2-70b and with superior coding capabilities, <span style="color: orange; font-weight: bold;">exhibits even greater vulnerability than Llama-2-70b</span>.</li>
                         </ul>
                     </span>
                 </div>
@@ -250,14 +228,33 @@
         <div class="rows">
             <div class="rows is-centered ">
                 <div class="row is-full-width">
-                    <h2 class="title is-3"><span class="dvima">Probing LLMs using Mutual Information      </span></h2>
-                    <img src="assets/images/mi.png" class="interpolation-image" width="60%"
+                    <h2 class="title is-3"><span class="dvima">Effect of programming languages and pre-training bias on CodeAttack</span></h2>
+                    <div class="columns is-vcentered">
+                        <div class="column has-text-centered">
+                            <img src="assets/images/program.png" class="interpolation-image" width="85%"
+                                 alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                            <!-- <p style="font-size: 90%; font-weight: bold;">Constructing steering vectors from the pre-training checkpoints <br>and intervening in the SFT model</p> -->
+                        </div>
+                        <div class="column has-text-centered">
+                            <img src="assets/images/quicksort.png" class="interpolation-image" width="70%"
+                                 alt="" style="display: block; margin-left: auto; margin-right: auto"/>
+                            <!-- <p style="font-size: 90%; font-weight: bold;">Performance of various models across four general capabilities <br>and five trustworthiness capabilities</p> -->
+                        </div>
+                    </div>
+
+                    <!-- <img src="assets/images/probing.png" class="interpolation-image"
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                    <br>
+                    <br> -->
                     <span style="font-size: 110%">
+                        <span style="font-weight: bold">The imbalanced distribution of programming languages in the code training corpus further widens the safety generalization gap.</span>
                         <ul style="list-style-type: disc; padding-left: 20px;">
-                            <li>We take an alternative view by probing LLMs with mutual information during pre-training.</li>
-                            <li>During the pre-training period of LLMs, there exist two distinct phases regarding trustworthiness: <span style="color: orange; font-weight: bold;">fitting and compression</span>, which is in line with previous research on traditional DNNs.</li>
+                            <li>We find that LLMs’ safety behavior generalizes <span style="color: orange; font-weight: bold;">less effectively to less popular programming languages</span>. For example, using Go instead of Python increases the attack success rate of Claude-2 from 24% to 74%.</li>
+                        </ul>
+                    </span>
+                    <span style="font-size: 110%">
+                        <span style="font-weight: bold">hypotheses about the success of CodeAttack: the misaligned bias acquired during code training.</span>
+                        <ul style="list-style-type: disc; padding-left: 20px;">
+                            <li>We hypothesize that the learned bias makes LLMs prioritize code completion over avoiding the potential safety risk. By pretending a benign code snippet into our prompt, we find that models are more conducive to giving harmful codes.</li>
                         </ul>
                     </span>
                 </div>
@@ -276,12 +273,11 @@
                             class="dvima">Conclusion</span></h2>
 
                     <p style="font-size: 125%">
-                        In this work, we take an initial and illuminating step towards elucidating the conceptual understanding of trustworthiness during pre-training.
-Firstly, by linear probing LLMs across reliability, privacy, toxicity, fairness, and robustness, we investigate the ability of LLMs representations to discern opposing concepts within each trustworthiness dimension during the whole pre-training period. 
-Furthermore, motivated by the probing results, we conduct extensive experiments to reveal the potential of utilizing representations from LLMs during its previous pre-training period to enhance LLMs' own trustworthiness. 
-Finally, we use mutual information to probe LLMs during pre-training and reveal some similarities in the learning mechanism between LLMs and traditional DNNs.
-<br><br>
-Taken collectively, the empirical study presented in this work can not only justify the potential to improve the trustworthiness of LLMs using their own pre-training checkpoints but may also lead to a better understanding of the dynamics of LLM representations, especially the trustworthiness-related concepts.
+                        In this study, we uncover generalization issues in the safety mechanisms of large language models (LLMs) when faced with novel scenarios, such as code.
+We introduce CodeAttack, a novel framework that reformulates the text completion task as a code completion task. 
+Our findings emphasize the importance of comprehensive red-teaming evaluations to assess the safety alignment of LLMs in long-tail distribution. 
+Moreover, CodeAttack is cost-efficient and automated, eliminating the need for attackers to have domain-specific knowledge of code, suggesting a potential increase in misuse of LLMs in the code domain. 
+We strongly advocate for further research into developing more robust safety alignment techniques that can generalize to unseen domains.
                     </p>
 
                 </div>
@@ -307,12 +303,12 @@ Taken collectively, the empirical study presented in this work can not only just
 <section class="section" id="BibTeX">
     <div class="container is-max-widescreen content">
         <h2 class="title">BibTeX</h2>
-        <pre><code>@article{qian2024towards,
-            title={Towards Tracing Trustworthiness Dynamics: Revisiting Pre-training Period of Large Language Models},
-            author={Qian, Chen and Zhang, Jie and Yao, Wei and Liu, Dongrui and Yin, Zhenfei and Qiao, Yu and Liu, Yong and Shao, Jing},
-            journal={arXiv preprint arXiv:2402.19465},
-            year={2024}
-}</code></pre>
+        <pre><code>@article{ren2024codeattack,
+    title={CodeAttack: Revealing Safety Generalization Challenges of Large Language Models via Code Completion},
+    author={Ren, Qibing and Gao, Chang and Shao, Jing and Yan, Junchi and Tan, Xin and Lam, Wai and Ma, Lizhuang},
+    journal={arXiv preprint arXiv:2403.07865},
+    year={2024}
+  }</code></pre>
     </div>
 </section>
 
