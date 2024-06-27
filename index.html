@@ -190,17 +190,18 @@
                 <div class="row is-full-width">
                     <h2 class="title is-3"><span class="dvima">CodeAttack can breach the safety guardrails of current SOTA LLMs</span></h2>
                     <div class="columns is-vcentered">
-                        <div class="column has-text-centered">
-                            <img src="assets/images/main_res.png" class="interpolation-image" width="110%"
+                        <div class="column has-text-centered is-10"> <!-- Adjust the column size -->
+                            <img src="assets/images/main_res.png" class="interpolation-image" width="100%"  
                                  alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                            <!-- <p style="font-size: 90%; font-weight: bold;">Constructing steering vectors from the pre-training checkpoints <br>and intervening in the SFT model</p> -->
+                            <!-- Optional descriptive text can be uncommented and used here -->
                         </div>
-                        <div class="column has-text-centered">
-                            <img src="assets/images/datastruc.png" class="interpolation-image" width="70%"
+                        <div class="column has-text-centered is-4"> <!-- Adjust the column size -->
+                            <img src="assets/images/datastruc.png" class="interpolation-image" width="100%" 
                                  alt="" style="display: block; margin-left: auto; margin-right: auto"/>
-                            <!-- <p style="font-size: 90%; font-weight: bold;">Performance of various models across four general capabilities <br>and five trustworthiness capabilities</p> -->
+                            <!-- Optional descriptive text can be uncommented and used here -->
                         </div>
                     </div>
+                    
 
                     <!-- <img src="assets/images/probing.png" class="interpolation-image"
                          alt="" style="display: block; margin-left: auto; margin-right: auto"/>
@@ -212,7 +213,7 @@
                         </ul>
                     </span>
                     <span style="font-size: 110%">
-                        <span style="font-weight: bold">A more powerful model does not necessar- ily lead to better safety behavior.</span>
+                        <span style="font-weight: bold">A more powerful model does not necessarily lead to better safety behavior.</span>
                         <ul style="list-style-type: disc; padding-left: 20px;">
                             <li>We find that bigger models like Claude-2 and GPT-4 are still vulnerable to CodeAttack. Furthermore, CodeLlama-70b-instruct, fine-tuned on Llama-2-70b and with superior coding capabilities, <span style="color: orange; font-weight: bold;">exhibits even greater vulnerability than Llama-2-70b</span>.</li>
                         </ul>
@@ -252,7 +253,7 @@
                         </ul>
                     </span>
                     <span style="font-size: 110%">
-                        <span style="font-weight: bold">hypotheses about the success of CodeAttack: the misaligned bias acquired during code training.</span>
+                        <span style="font-weight: bold">Hypotheses about the success of CodeAttack: the misaligned bias acquired during code training.</span>
                         <ul style="list-style-type: disc; padding-left: 20px;">
                             <li>We hypothesize that the learned bias makes LLMs prioritize code completion over avoiding the potential safety risk. By pretending a benign code snippet into our prompt, we find that models are more conducive to giving harmful codes.</li>
                         </ul>
